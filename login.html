@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Container for login and signup forms -->
+    <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg w-full max-w-md">
+        <!-- Login form -->
+        <div class="form-box active" id="login-form">
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <form id="loginForm">
+                <div class="input-box mb-4">
+                    <input type="email" id="loginEmail" required
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <label class="absolute left-3 -top-3 text-gray-500">Email</label>
+                </div>
+                <div class="input-box mb-4">
+                    <input type="password" id="loginPassword" required
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <label class="absolute left-3 -top-3 text-gray-500">Password</label>
+                </div>
+                <div class="button-box mb-4">
+                    <a href="dashboard.html"
+                        class="block text-center bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">Login</a>
+                </div>
+                <p class="text-center">Don't have an account? <a href="#" id="showSignup"
+                        class="text-blue-500">Sign up</a></p>
+            </form>
+        </div>
+
+        <!-- Signup form -->
+        <div class="form-box hidden" id="signup-form">
+            <h2 class="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+            <form id="signupForm">
+                <div class="input-box mb-4">
+                    <input type="text" id="signupUsername" required
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <label class="absolute left-3 -top-3 text-gray-500">Username</label>
+                </div>
+                <div class="input-box mb-4">
+                    <input type="email" id="signupEmail" required
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <label class="absolute left-3 -top-3 text-gray-500">Email</label>
+                </div>
+                <div class="input-box mb-4">
+                    <input type="password" id="signupPassword" required
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <label class="absolute left-3 -top-3 text-gray-500">Password</label>
+                </div>
+                <div class="button-box mb-4">
+                    <button type="submit"
+                        class="w-full text-center bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">Sign Up</button>
+                </div>
+                <p class="text-center">Already have an account? <a href="#" id="showLogin"
+                        class="text-blue-500">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
